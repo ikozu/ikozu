@@ -13,7 +13,7 @@ proxies:
       headers:
         Host: ads.ruangguru.com
         
-- name: "سوشيال ريد اسيا باقة ببجي"
+  - name: "سوشيال ريد اسيا باقة ببجي"
     type: trojan
     server: 185.137.157.156
     port: 443
@@ -24,7 +24,7 @@ proxies:
     skip-cert-verify: true
     network: tcp
 
-- name: "Gcp"
+  - name: "Gcp"
     type: vless
     server: corazon-vless-980948174564.us-central1.run.app
     port: 443
@@ -40,7 +40,7 @@ proxies:
       headers:
         Host: ads.ruangguru.com
         
-- name: "VMess Spotify Premium"
+  - name: "VMess Spotify Premium"
     type: vmess
     server: amanah.pt-pakdepremium.com
     port: 443
@@ -57,7 +57,7 @@ proxies:
       headers:
         Host: ads.ruangguru.com    
         
-- name: "🚑YES UNLIMITED VPNFM@IJAN88"
+  - name: "🚑YES UNLIMITED VPNFM@IJAN88"
     type: vless
     server: ads.ruangguru.com
     port: 80
@@ -70,7 +70,7 @@ proxies:
       headers:
         Host: sg-srp1.077008921.xyz
         
-- name: "🚑YES UNLIMITED VPNFM@IJAN88 - TLS"
+  - name: "🚑YES UNLIMITED VPNFM@IJAN88 - TLS"
     type: vless
     server: sg-srp1.077008921.xyz
     port: 443
@@ -83,5 +83,20 @@ proxies:
     network: ws
     ws-opts:
       path: /vless
+      headers:
+        Host: ads.ruangguru.com
+
+  - name: "Free AllNetworks"
+    type: trojan
+    server: tech-6oesdcjqda-uc.a.run.app
+    port: 443
+    password: saeka
+    udp: true
+    tls: true
+    sni: ads.ruangguru.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /saeka-tojirp
       headers:
         Host: ads.ruangguru.com
