@@ -42,7 +42,7 @@ proxies:
       headers:
         Host: ads.ruangguru.com
 
-- name: "Robi - Airtel 01 🇸🇬"
+  - name: "Robi - Airtel 01 🇸🇬"
     type: vless
     server: onlyfans.googleusercontent.dev
     port: 443
