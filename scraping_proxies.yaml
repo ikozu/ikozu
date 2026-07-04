@@ -1,127 +1,14 @@
 proxies:
-  - name: Vless-BEBAS-WS (CDN)
-    type: vless
-    server: usa.bagibagi.web.id
-    port: 443
-    uuid: 933de4f9-be49-447c-938b-4ac8232b6b5f
-    cipher: auto
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: ads.ruangguru.com
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: ads.ruangguru.com
-
-  - name: "VMS-FreeCDN Scraping ads.ruangguru.com"
-    server: free.bagibagi.web.id
-    port: 443
-    type: vmess
-    uuid: a13356bc-4fa4-4d61-8259-f6337ee71da1
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    sni: ads.ruangguru.com
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: ads.ruangguru.com
-
-  - name: "VLS-Zain Free Scraping ads.ruangguru.com"
-    server: zain.blogblog.com
-    port: 443
-    type: vless
-    uuid: ac01de74-7429-42ec-87b8-c1cce504f9be
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ads.ruangguru.com
-    network: ws
-    ws-opts:
-      path: /vless_sg004
-      headers:
-        Host: xj-gcp-sts-451089676939.asia-southeast1.run.app
-
-  - name: "VMS-Hihu Split ads.ruangguru.com"
-    server: eu-2.hihu.net
-    port: 443
-    type: vmess
-    uuid: 1cef2320-6cd4-11f1-b436-205c6d5f5d78
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    sni: ads.ruangguru.com
-    network: ws
-    ws-opts:
-      path: /20pks54y
-      headers:
-        Host: ads.ruangguru.com 
-
-  - name: "TRJ-Zain Free Split ads.ruangguru.com"
-    server: zain.blogblog.com
-    port: 443
+  - name: "DARK ILLIMITÉ 🥳🥳"
     type: trojan
-    password: c1a96046-5c13-4fec-a93e-99af54163ce9
-    skip-cert-verify: true
+    server: yt3.ggpht.com
+    port: 443
+    password: q@exhxx78
+    udp: true
     sni: ads.ruangguru.com
-    network: ws
-    ws-opts:
-      path: /trojan-ws_fr003
-      headers:
-        Host: xj-gcp-sts-451089676939.asia-southeast1.run.app
-    udp: true
-
-  - name: "🇸🇬 VLS-Worker Free Ruangguru"
-    server: sni-1.up.railway.app
-    port: 443
-    type: vless
-    uuid: c6af35ca-70ac-4ca9-94ab-87d7f5f55698
-    cipher: auto
-    tls: true
     skip-cert-verify: true
-    servername: ads.ruangguru.com
     network: ws
     ws-opts:
-      path: /vless-vpnjatim
-      headers:
-        Host: sni-1.up.railway.app
-    udp: true
-
-  - name: "💥 VMS-Zidstore Free Ruangguru"
-    server: free.zidstore.net
-    port: 443
-    type: vmess
-    uuid: 11bd9e8e-8741-4bb6-b06f-2c23eec32ebc
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: ads.ruangguru.com
-    network: ws
-    ws-opts:
-      path: /vmess
+      path: /
       headers:
         Host: ads.ruangguru.com
-    udp: true 
-     
-  - name: "💥 VMS-Bagibagi TLS Ruangguru"
-    server: ads.ruangguru.com
-    port: 443
-    type: vmess
-    uuid: a13356bc-4fa4-4d61-8259-f6337ee71da1
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: free.bagibagi.web.id
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: free.bagibagi.web.id
-    udp: true
