@@ -369,7 +369,6 @@ proxy-groups:
     proxies:
       - 💎 Premium Account
       - 👾Scraping Account
-      - 🤲 BANSOS ⚡ Auto-Ping
 
   - name: ⚡ Auto-Ping
     type: url-test
