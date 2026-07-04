@@ -1,0 +1,32 @@
+proxies:
+  # Akun Premium SG (Strict IP)
+  - name: "🇸🇬 TRJWSSNI 2026-06-24 ads.ruangguru.com"
+    server: subcmwt.package.web.id
+    port: 443
+    type: trojan
+    password: 8aa1f6ee-6f69-4ac8-aae7-e32b8fc70dcf
+    skip-cert-verify: true
+    sni: ads.ruangguru.com
+    network: ws
+    ws-opts:
+      path: trojan
+      headers:
+        Host: ads.ruangguru.com
+    udp: true
+
+  # Akun Premium ID Dewabis - Mode WS TLS (Aktif s/d 2026-07-04)
+  - name: "🇮🇩 VLS-Dewabis WS 2026-07-04"
+    server: id-dewa.package.web.id
+    port: 443
+    type: vless
+    uuid: afc1d3bc-b650-4ec6-832f-680d399e268f
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: ads.ruangguru.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: ads.ruangguru.com
+    udp: true
