@@ -300,7 +300,7 @@ proxy-providers:
   premium-provider:
     type: http
     # GANTI LINK DI BAWAH DENGAN LINK RAW premium_proxies.yaml ANDA
-    url: "https://raw.githubusercontent.com/username/repo/main/premium_proxies.yaml"
+    url: "https://raw.githubusercontent.com/ikozu/ikozu/refs/heads/main/premium_proxies.yaml"
     path: ./providers/premium_proxies.yaml
     interval: 3600
     health-check:
@@ -311,7 +311,7 @@ proxy-providers:
   scraping-provider:
     type: http
     # GANTI LINK DI BAWAH DENGAN LINK RAW scraping_proxies.yaml ANDA
-    url: "https://raw.githubusercontent.com/username/repo/main/scraping_proxies.yaml"
+    url: "https://raw.githubusercontent.com/ikozu/ikozu/refs/heads/main/scraping_proxies.yaml"
     path: ./providers/scraping_proxies.yaml
     interval: 3600
     health-check:
@@ -340,7 +340,6 @@ proxy-groups:
     lazy: true
     use:
       - scraping-provider
-    filter: "(?i)Bebas|FreeCDN|Zain|Hihu Split"
 
   - name: 🤲 BANSOS ⚡ Auto-Ping
     type: url-test
@@ -350,7 +349,6 @@ proxy-groups:
     lazy: true
     use:
       - scraping-provider
-    filter: "(?i)Worker|Zidstore|Bagibagi"
 
   - name: 🚀 Proxy
     type: select
