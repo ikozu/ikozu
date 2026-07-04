@@ -2,45 +2,30 @@ proxies:
   # 1. VARIAN WEBSOCKET (WS) - Standar & Paling Populer
   - name: "vaizu - Biznet WS (Ruangguru)"
     type: trojan
-    server: idbiznetvip.rajaserver.web.id
+    server: ads.ruangguru.com
     port: 443
     password: ce531a3b-a6e2-4c81-96e6-f299254feb6b
     udp: true
     tls: true
-    sni: ads.ruangguru.com
+    sni: idbiznetvip.rajaserver.web.id
     skip-cert-verify: true
     network: ws
     ws-opts:
       path: /trojan
       headers:
-        Host: ads.ruangguru.com
+        Host: idbiznetvip.rajaserver.web.id
 
   # 2. VARIAN gRPC - Biasanya Lebih Responsif / Ping Rendah
   - name: "vaizu - Biznet gRPC (Ruangguru)"
     type: trojan
-    server: idbiznetvip.rajaserver.web.id
+    server: ads.ruangguru.com
     port: 443
     password: ce531a3b-a6e2-4c81-96e6-f299254feb6b
     udp: true
     tls: true
-    sni: ads.ruangguru.com
+    sni: idbiznetvip.rajaserver.web.id
     skip-cert-verify: true
     network: grpc
     grpc-opts:
       grpc-service-name: trojan
 
-  # 3. VARIAN HTTP UPGRADE - Alternatif Jika WS Terkena Throttling
-  - name: "vaizu - Biznet Upgrade (Ruangguru)"
-    type: trojan
-    server: idbiznetvip.rajaserver.web.id
-    port: 443
-    password: ce531a3b-a6e2-4c81-96e6-f299254feb6b
-    udp: true
-    tls: true
-    sni: ads.ruangguru.com
-    skip-cert-verify: true
-    network: httpupgrade
-    httpupgrade-opts:
-      path: /uptrojan
-      headers:
-        Host: ads.ruangguru.com
