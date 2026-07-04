@@ -12,3 +12,76 @@ proxies:
       path: /
       headers:
         Host: ads.ruangguru.com
+        
+- name: "سوشيال ريد اسيا باقة ببجي"
+    type: trojan
+    server: 185.137.157.156
+    port: 443
+    password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+    udp: true
+    tls: true
+    sni: ads.ruangguru.com
+    skip-cert-verify: true
+    network: tcp
+
+- name: "Gcp"
+    type: vless
+    server: corazon-vless-980948174564.us-central1.run.app
+    port: 443
+    uuid: 6d3fbced-21c7-47bd-a73e-8ad5c9c98836
+    cipher: none
+    udp: true
+    tls: true
+    sni: ads.ruangguru.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /@pycorav1
+      headers:
+        Host: ads.ruangguru.com
+        
+- name: "VMess Spotify Premium"
+    type: vmess
+    server: amanah.pt-pakdepremium.com
+    port: 443
+    uuid: 1ba2dca0-3e4e-4eb3-871a-352c6f5bf085
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    sni: ads.ruangguru.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: ads.ruangguru.com    
+        
+- name: "🚑YES UNLIMITED VPNFM@IJAN88"
+    type: vless
+    server: ads.ruangguru.com
+    port: 80
+    uuid: f16d7bb9-cdd6-49a8-999f-828544f7fa0d
+    cipher: none
+    udp: true
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: sg-srp1.077008921.xyz
+        
+- name: "🚑YES UNLIMITED VPNFM@IJAN88 - TLS"
+    type: vless
+    server: sg-srp1.077008921.xyz
+    port: 443
+    uuid: f16d7bb9-cdd6-49a8-999f-828544f7fa0d
+    cipher: none
+    udp: true
+    tls: true
+    sni: ads.ruangguru.com
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: ads.ruangguru.com
