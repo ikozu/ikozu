@@ -1,4 +1,20 @@
 proxies:
+  - name: Vless-BEBAS-WS (CDN)
+    type: vless
+    server: usa.bagibagi.web.id
+    port: 443
+    uuid: 933de4f9-be49-447c-938b-4ac8232b6b5f
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: true
+    servername: ads.ruangguru.com
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: ads.ruangguru.com
+
   - name: "DARK ILLIMITÉ 🥳🥳"
     type: trojan
     server: yt3.ggpht.com
